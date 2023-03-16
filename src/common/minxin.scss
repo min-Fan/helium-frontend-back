@@ -1,0 +1,158 @@
+* {
+	margin: 0;
+	padding: 0;
+	touch-action: pan-y;
+}
+
+html,
+body, #app, .app_box{
+  height: 100%;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  color: $text-white;
+  background-color: $main-white;
+  .app_boxs {
+	height: calc(100% - 258px);
+  }
+}
+html,
+body, #app, .hock_app_box {
+	color: $text-qs-hock;
+	background-color: $main-hock;
+}
+
+/* 弹性布局 */
+.flex,
+.f-j-sb,
+.f-j-a-c,
+.f-d-c,
+.f-j-sb-a-c,
+.f-j-sa-a-c,
+.f-j-c,
+.f-a-c {
+	display: flex;
+}
+
+.f-j-sb,
+.f-j-sb-a-c {
+	justify-content: space-between;
+}
+
+.f-j-sa-a-c {
+	align-items: center;
+	justify-content: space-around;
+}
+
+.f-j-c {
+	justify-content: center;
+}
+
+.f-a-c {
+	align-items: center;
+}
+
+.f-j-a-c {
+	align-items: center;
+	justify-content: center;
+}
+
+.f-d-c {
+	flex-direction: column;
+}
+
+.f-j-sb-a-c {
+	align-items: center;
+}
+
+/* 溢出省略号 */
+.ellipsis {
+	display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+	overflow: hidden;
+	word-break: break-all; /* break-all(允许在单词内换行。) */
+	text-overflow: ellipsis; /* 超出部分省略号 */
+	-webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+	-webkit-line-clamp: 1; 
+}
+.ellipsis2 {
+	min-width: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: break-all;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.one_text {
+	cursor: default;
+	display: inline-block;
+	width: 90px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* 大标题 */
+.title {
+	font-size: 60px;
+	font-weight: 600;
+	text-align: center;
+	line-height: 84px;
+}
+
+/* 文字 */
+.text_desc {
+	font-size: 28px;
+}
+
+.el-scrollbar {
+	> .el-scrollbar__bar {
+		opacity: 1 !important;
+	}
+}
+.van-toast__loading {
+	color: #13C087 !important;
+}
+.fail i {
+	color: #E42E34;
+}
+.successToast i {
+	color: #13C087;
+}
+
+.van-popup {
+	background-color: #fff;
+	border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
+	overflow: hidden;
+	box-shadow: none;
+	border: none;
+}
+
+.van-popup--round {
+	border-radius: 40px;
+	overflow: hidden;
+	box-shadow: none;
+	border: none;
+}
+
+.null_box {
+	font-size: 32px;
+	margin: 32px 0;
+	text-align: center;
+	span {
+		color: #cccccc;
+	}
+}
